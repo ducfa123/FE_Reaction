@@ -1,0 +1,45 @@
+.wrapper {
+    position: relative;
+}
+.form {
+    position: absolute;
+    top: 20%;
+    left: 6%;
+    
+    input {
+        width: 500px;
+        background-color: #ccc;
+    }
+
+    label {
+        font-size: medium;
+    }
+}
+.back {
+    margin-top: 4px;
+    position: absolute;
+    top: 9%;
+    left: 3%;
+    font-size: large;
+    :hover {
+        cursor: pointer;
+    }
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    h1 {
+      position: absolute;
+        top: 9%;
+        left: 6%;
+     }
+
+}
+
+.tittle{
+
+}
+.btn {
+    margin-top: 20px;
+}

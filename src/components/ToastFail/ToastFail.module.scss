@@ -1,0 +1,33 @@
+.toast{
+    position: absolute;
+    top: 0;
+    right: 0;
+    p{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .msg{
+        font-size: 16px;
+    }
+
+    .header {
+        height: 30px;
+        background-color: rgb(227, 150, 150);
+    
+    }
+
+    button {
+        font-size: 14px;
+        align-items: flex-end;
+    }
+}
+
+.error{
+    font-size: 20px;
+    color: red;
+    margin-right: 8px;
+}
+
+
+

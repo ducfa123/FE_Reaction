@@ -1,0 +1,67 @@
+@import 'normalize.css';
+@import url('https://use.typekit.net/nko5fvg.css');
+:root {
+    --primary: #0099cc;
+    --black: #000;
+    --white: #fff;
+    --text-color: #333;
+    --header-height: 50px;
+    --header-content-height: 24px;
+    --header-spacer: 20px;
+    --input-height: 40px;
+    --large-button-width:500px;
+    --background-color:  rgba(212, 177, 36, 0.404);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: ibm-plex-sans, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizespeed;
+    color:var(--text-color);
+    min-height: 100vh;
+
+
+}
+
+button,input,[tabindex] {
+    outline: none;
+    border: none;
+}
+
+input[type="text"],
+input[type="password"],
+button,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  padding: 0.25rem;
+  border-radius: 4px;
+
+}
+
+input {
+    width: 500px;
+    caret-color: var(--primary);
+    color: var(--black);
+    background-color:var(--white);
+    border: 2px solid transparent;
+    height: var(--input-height);
+     &:focus-within {
+        border-color: var(--primary);
+    }
+   
+   
+}
+
+
+  

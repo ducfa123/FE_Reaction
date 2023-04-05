@@ -3,12 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import GlobalStyles from './components/GlobalStyles';
+import { AuthProvider } from './context/AuthContext';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <BrowserRouter>
+            <AuthProvider>
+                <GlobalStyles>
+                    <Routes>
+                        <Route path="/*" element={<App />} />
+                    </Routes>
+                </GlobalStyles>
+            </AuthProvider>
+        </BrowserRouter>
+    </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function

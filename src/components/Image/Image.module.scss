@@ -1,0 +1,102 @@
+.img {
+    --s: 150px; /* the size of the image */
+    --b: 8px; /* the border thickness*/
+    --g: 14px; /* the gap */
+    --c: #4ecdc4; /* the color */
+    margin-top: 30px;
+
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s) / 2) solid #0009;
+    outline-offset: calc(var(--s) / -2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.img:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+}
+
+.img + img {
+    border-radius: 50%;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    h1 {
+        position: absolute;
+        top: 9%;
+        left: 6%;
+    }
+}
+.wrapper {
+    position: relative;
+
+    h1 {
+        position: absolute;
+        top: 9%;
+        left: 6%;
+    }
+
+    .back {
+        margin-top: 4px;
+        position: absolute;
+        top: 9%;
+        left: 3%;
+        font-size: large;
+        :hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.listimg {
+    position: absolute;
+    top: 15%;
+}
+
+.imageChoosen {
+    max-width: 1000px;
+    // min-height: 100px;
+    height: 450px;
+}
+
+.body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-wrapper {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+    justify-content: center;
+}
+.close-btn {
+    margin-right: 12px;
+}
+.choose-btn {
+}
+
+
+.true{
+    .trueicon{
+        color:rgb(211, 107, 107);
+        margin-right: 6px;
+    }
+    margin-top: 12px;
+    color : red;
+}
+.nottrue{
+
+    .falseicon{
+        color : greenyellow;
+        margin-right: 6px;
+    }
+    color : green;
+    margin-top: 12px;
+
+}
