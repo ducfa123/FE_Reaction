@@ -8,7 +8,7 @@ function Users() {
     
     return (
         <article>
-            <h2>Users List</h2>
+            {/* <h2>Users List</h2>
             {users?.length
                 ? (
                     <ul>
@@ -17,9 +17,9 @@ function Users() {
                 )
                 : <p> No user to display</p>
             }
-            <Button onClick={() => {refresh()}}>btn</Button>
+            <Button onClick={() => {refresh()}}>btn</Button> */}
         </article>
     );
-}
+}   
 
 export default Users;

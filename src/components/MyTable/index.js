@@ -27,7 +27,7 @@ function MyTable() {
                 setDeleteSuccess(true); 
                 setShowDeleteModal(false)
                 //re-render
-                window.location.reload(false);
+                window.location.reload(true);
             })
             .catch((err) => {
                 setDeleteFail(true);

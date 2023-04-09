@@ -29,8 +29,8 @@ function Image() {
         });
     }, []);
     useEffect(() => {
-        // socket.on('send_infering_result_5000', (data) => {
-        socket.on('start_infering', (data) => {
+        socket.on('send_infering_result_5000', (data) => {
+        // socket.on('start_infering', (data) => {
             console.log(data.response);
             return data.response === true ? setIsSensitiveImg(true) : setNotSensitiveImg(true);
         });
